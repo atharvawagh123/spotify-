@@ -1,12 +1,12 @@
 // Songs array with song objects
 const songs = [
-    { title: 'swim', src: 's1.mp3', album: 'ab67616d000048515a0c2870f4f309e382d1fad6.jpg', artist: 'zayn malik1', date: '24-05-2014' },
-    { title: 'under the influence', src: 's1.mp3', album: 'ab67616d000048519a494f7d8909a6cc4ceb74ac.jpg', artist: 'zayn malik2', date: '25-05-2014' },
-    { title: 'starboy', src: 's1.mp3', album: 'ab67616d000048514718e2b124f79258be7bc452.jpg', artist: 'zayn malik3', date: '26-05-2014' },
-    { title: 'Song 4', src: 's1.mp3', album: 'ab67616d00004851633a2d775747bccfbcb17a45.jpg', artist: 'zayn malik4', date: '27-05-2014' },
-    { title: 'Song 5', src: 's1.mp3', album: 'ab67616d00004851881d8d8378cd01099babcd44.jpg', artist: 'zayn malik5', date: '28-05-2014' },
-    { title: 'Song 6', src: 's1.mp3', album: 'ab67616d00001e022bdcb339402ebd78651f09c8.jpg', artist: 'zayn malik6', date: '21-05-2014' },
-    { title: 'Song 7', src: 's1.mp3', album: 'ab67616d000048517fcead687e99583072cc217b.jpg', artist: 'zayn malik7', date: '24-05-2014' }
+    { title: 'swim', src: 's1.mp3', album: 'ab67616d000048515a0c2870f4f309e382d1fad6.jpg', artist: 'chase atlantic', date: '24-05-2014' },
+    { title: 'under the influence', src: 's1.mp3', album: 'ab67616d000048519a494f7d8909a6cc4ceb74ac.jpg', artist: 'chris brown', date: '25-05-2014' },
+    { title: 'starboy', src: 's1.mp3', album: 'ab67616d000048514718e2b124f79258be7bc452.jpg', artist: 'The Weeknd', date: '26-05-2014' },
+    { title: 'Attention', src: 's1.mp3', album: 'ab67616d00004851633a2d775747bccfbcb17a45.jpg', artist: 'charlie puth', date: '27-05-2014' },
+    { title: 'MY EYES', src: 's1.mp3', album: 'ab67616d00004851881d8d8378cd01099babcd44.jpg', artist: 'Travis Scott', date: '28-05-2014' },
+    { title: 'Dusk Till Dawn', src: 's1.mp3', album: 'ab67616d00001e022bdcb339402ebd78651f09c8.jpg', artist: 'zayn malik', date: '21-05-2014' },
+    { title: 'often', src: 's1.mp3', album: 'ab67616d000048517fcead687e99583072cc217b.jpg', artist: 'The Weeknd', date: '24-05-2014' }
 ];
 function playSong(index) {
     currentIndex = index;
