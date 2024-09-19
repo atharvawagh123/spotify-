@@ -1,12 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
 * {
   font-family: "Ubuntu", sans-serif;
   color: aliceblue;
+  box-sizing: border-box;
 }
+
 body {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
+
 #navigation {
   gap: 10px;
   align-items: center;
@@ -14,157 +18,189 @@ body {
   background-color: #333;
   height: 60px;
   color: aliceblue;
+  padding: 0 10px;
 }
+
 .head {
   font-size: 20px;
 }
+
 #logo {
-  margin-left: 10px;
   height: 44px;
   width: 44px;
 }
+
 #home {
-  margin-left: 79%;
+  margin-left: auto;
 }
 
 #mainbody {
   background-color: #333;
   display: flex;
- 
-}
-#homesection {
-  width: 30%;
-  background-color: blue;
-  
+  flex-direction: column;
 }
 
-.home {
+#homesection {
+  width: 100%;
+  background-color: #333;
+}
+
+.home, .house {
   background-color: #333;
   width: 100%;
   height: 58px;
   display: flex;
+  align-items: center;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 0 10px;
 }
+
 .hea {
   font-size: 20px;
-  margin-left: 150px;
+  margin-left: 10px;
 }
+
 #your {
   margin: 10px;
   font-size: 20px;
 }
+
 #yourdes {
   font-size: 16px;
 }
+
 #yourimage {
   margin: 5px;
 }
-.house {
-  background-color: #333;
-  width: 100%;
-  height: 60px;
-  display: flex;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
+
 .sound {
   margin-top: 10px;
   margin-left: 10px;
   font-size: 16px;
 }
+
 .sound1 {
   margin-top: -10px;
   font-size: 14px;
   margin-left: 10px;
   font-weight: lighter;
 }
+
 .imaged {
-  margin-left: 200px;
+  margin-left: auto;
   margin-bottom: 5px;
   margin-top: 5px;
 }
+
 #musicsection {
-  width: 70%;
+  width: 100%;
   background-color: #333;
-   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
 #musicnavigation {
   background-color: #333;
 }
 
 #snippet {
-  margin-left: 25px;
+  margin: 10px;
   display: flex;
-  margin-top: 10px;
-  align-items: center;
-  gap: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
 }
+
 .snap {
-  width: 30%;
+  width: 100%;
   display: flex;
   align-items: center;
   background-color: #333;
   gap: 5px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 10px;
 }
+
 #watch {
   background-color: #333;
 }
+
 .goodmoring {
-  margin-left: 25px;
+  margin-left: 10px;
 }
+
 #cardmeanu {
-  margin-left: 30px;
+  margin: 10px;
   display: flex;
-  gap: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
 }
+
 .card {
   background-color: #333;
-  width: 137px;
+  width: calc(50% - 10px);
+  max-width: 137px;
   height: 200px;
-  margin-left: 10px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
 }
+
 .mix {
   font-size: 16px;
-  margin-left: 20px;
-  margin-top: -3px;
+  text-align: center;
+  margin-top: 5px;
 }
+
 .cardimage {
-  width: 110px;
-  margin: 14px;
+  width: 100%;
+  max-width: 110px;
   border-radius: 24%;
 }
+
 .mixture {
   font-size: 13.3px;
-  margin-left: 11px;
+  text-align: center;
+  margin-top: 5px;
 }
+
 #player {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   margin-top: 20px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   background-color: #333;
-  height: 133px;
-  margin-top: 36px;
+  padding: 10px;
 }
+
 #imagesection {
-  width: 30%;
+  width: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
 }
+
 #songname {
   font-size: 18px;
+  text-align: center;
 }
+
 .songinfo {
   font-size: 14px;
+  text-align: center;
 }
+
 #musicimage {
-  margin: 5px;
   width: 30%;
+  max-width: 100px;
 }
+
 .progress-bar {
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   -webkit-appearance: none;
   appearance: none;
   height: 5px;
@@ -182,50 +218,50 @@ body {
   border-radius: 50%;
   cursor: pointer;
 }
+
 #progresssection {
   display: flex;
-  gap: 5px;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 10px;
 }
-#currenttime {
+
+#currenttime, #duration {
   font-size: 12px;
 }
-#duration {
-  font-size: 12px;
-}
+
 .controls {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
-  margin-left: 9px;
   gap: 25px;
+  margin-bottom: 10px;
 }
+
 .play-pause {
   font-size: 20px;
   width: 50px;
-  aspect-ratio: auto 50 / 50;
   height: 50px;
 }
+
 .controls button {
   background-color: transparent;
   border: none;
   color: #fff;
   font-size: 20px;
-  margin: 0 10px;
   cursor: pointer;
 }
+
 #musicinfo {
-  margin-top: 10px;
+  text-align: center;
+  margin-bottom: 10px;
 }
-#volumn {
-  width: 100%;
-  background: #a64dff;
-}
+
 .volume-control {
   display: flex;
   align-items: center;
-  margin-top: 10px;
-  margin-left: 100px;
+  width: 100%;
+  margin-bottom: 10px;
 }
 
 .volume-control label {
@@ -247,15 +283,6 @@ body {
   cursor: pointer;
 }
 
-#volumn::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 15px;
-  height: 15px;
-  background: #a64dff;
-  border-radius: 50%;
-  cursor: pointer;
-}
 .like-button {
   background-color: transparent;
   border: none;
@@ -264,7 +291,6 @@ body {
   cursor: pointer;
   outline: none;
   transition: color 0.3s ease;
-  margin-left: 200px;
 }
 
 .like-button.liked {
@@ -273,4 +299,87 @@ body {
 
 .like-button:hover {
   color: #e74c3c;
+}
+
+/* Media Queries for Responsiveness */
+
+@media (min-width: 768px) {
+  #mainbody {
+    flex-direction: row;
+  }
+
+  #homesection {
+    width: 30%;
+  }
+
+  #musicsection {
+    width: 70%;
+  }
+
+  .hea {
+    margin-left: 150px;
+  }
+
+  #snippet {
+    margin-left: 25px;
+  }
+
+  .snap {
+    width: 30%;
+  }
+
+  #cardmeanu {
+    margin-left: 30px;
+    justify-content: flex-start;
+  }
+
+  .card {
+    width: 137px;
+  }
+
+  #player {
+    flex-direction: row;
+    height: 133px;
+  }
+
+  #imagesection {
+    width: 30%;
+    margin-bottom: 0;
+  }
+
+  .volume-control {
+    margin-left: 100px;
+  }
+
+  .like-button {
+    margin-left: 200px;
+  }
+}
+
+/* Hide .musicsection on mobile devices */
+@media (max-width: 767px) {
+  #musicsection {
+    display: none;
+  }
+
+  #mainbody {
+    flex-direction: column;
+  }
+
+  .card {
+    width: calc(100% - 10px); /* Make cards full-width with some gap */
+  }
+
+  #player {
+    flex-direction: column;
+    height: auto; /* Allow player height to adjust automatically */
+  }
+
+  .volume-control {
+    margin-left: 0; /* Remove left margin on mobile */
+  }
+
+  .like-button {
+    margin-left: 0; /* Remove left margin on mobile */
+  }
 }
